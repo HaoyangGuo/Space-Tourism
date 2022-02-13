@@ -97,7 +97,15 @@
             <h2 class="numbered-title"><span>03</span> Interactive elements</h2>
             
             <!-- navigation -->
-            <div></div>
+            <div>
+                <nav>
+                    <ul class="primary-navigation underline-indicators flex" style="--gap: 8rem;">
+                        <li class="active"><a class="uppercase text-white letter-spacing-2" href="#"><span>00</span> Active</a></li>
+                        <li><a class="uppercase text-white letter-spacing-2" href="#"><span>01</span> Hovered</a></li>
+                        <li><a class="uppercase text-white letter-spacing-2" href="#"><span>02</span> Idle</a></li>
+                    </ul>
+                </nav>
+            </div>
             
             <div class="flex">
                 <div style="margin-top: 5rem;">
@@ -105,14 +113,27 @@
                     <a href="#" class="large-button uppercase ff-serif text-dark bg-white fs-600">Explore</a>
                 </div>
                 
-                <div style="margin-bottom: 50vh;">
+                <div class="flow" style="margin-bottom: 50vh; --flow-space: 4rem">
                     <!-- Tabs -->
-                    
+                    <div class="tab-list underline-indicators flex">
+                        <button aria-selected="true" class="uppercase text-accent bg-dark letter-spacing-2">Moon</button>
+                        <button aria-selected="false" class="uppercase text-accent bg-dark letter-spacing-2">Mars</button>
+                        <button aria-selected="false" class="uppercase text-accent bg-dark letter-spacing-2">Europa</button>
+                    </div>
                     
                     <!-- Dots -->
-                    
+                    <div class="dot-indicators flex">
+                        <button aria-selected="true"><span class="sr-only">Slide title</span></button>
+                        <button aria-selected="false"><span class="sr-only">Slide title</span></button>
+                        <button aria-selected="false"><span class="sr-only">Slide title</span></button>
+                    </div>
                     
                     <!-- Numbers -->
+                    <div class="number-sliders flex" style="--gap: 4rem">
+                        <button aria-selected="true" class="text-white ff-serif fs-600">1</button>
+                        <button aria-selected="false" class="text-white ff-serif fs-600">2</button>
+                        <button aria-selected="false" class="text-white ff-serif fs-600">3</button>
+                    </div>
                 </div>
             </div>
             
